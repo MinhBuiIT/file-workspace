@@ -1,0 +1,64 @@
+html {
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    line-height: 1;
+    font-size: 16px;
+    overflow: hidden;
+}
+.tab {
+    width: 500px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+.tab-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: 0px;
+    scroll-behavior: smooth;
+}
+.tab-list::-webkit-scrollbar {
+    display: none;
+}
+.tab-item {
+    padding: 4px 18px;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+.tab-item.active {
+    border-bottom: 1px solid #3a86ff;
+}
+.tab i {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.tab .tab-left {
+    margin-right: 14px;
+}
+.tab .tab-right {
+    margin-left: 14px;
+}
+.disable {
+    opacity: 0;
+    /* visibility: hidden; */
+    cursor: default;
+    transition: all 0.2s ease;
+}

@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: #49a6e9;
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-red-dark: hsl(360, 67%, 44%);
+    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-green-dark: hsl(125, 67%, 44%);
+    --clr-green-light: hsl(125, 71%, 66%);
+    --clr-secondary: hsla(182, 63%, 54%);
+    --clr-black: #222;
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+    --transition: all 0.3s linear;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    background-color: var(--clr-grey-10);
+}
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(./hero-bcg.jpeg) center/cover no-repeat;
+}
+#nav{
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
+    background-color: #fff !important;
+}
+.fixed-nav .links a {
+    color: #333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-menu {
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+.logo {
+    width: 60px;
+}
+/* .links-container {
+    height: auto;
+} */
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.links a {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+}
+.banner {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+.title p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 6px 16px;
+    border: 2px solid #fff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 0.25s linear;
+}
+.btn:hover {
+    background-color: #fff;
+    color: rgba(63, 208, 212, 0.5);
+}
+section {
+    min-height: 80vh;
+    padding-bottom: 5rem;
+}
+section .name {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#tours,
+#about {
+    background-color: #fff;
+}
+#service {
+    background-color: var(--clr-grey-10);
+}
+footer {
+    min-height: 15vh;
+    background-color: var(--clr-primary-1);
+}
+footer p {
+    text-align: center;
+    line-height: 15vh;
+    font-size: 1rem;
+    color: #fff;
+}
+.back-home {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background-color: #49a6e9;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+.shown {
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (max-width: 800px) {
+    #nav{
+        background-color: #fff;
+    }
+    .nav-container {
+        position: relative;
+    }
+    .icon-menu {
+        display: inline-block;
+    }
+    .fixed-nav .links-container{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 12px;
+    }
+    .links-container {
+        position: absolute;
+        top: 100%;
+        left: -1.5rem;
+        width: 100vw;
+        background-color: #fff;
+        height: 0;
+        overflow: hidden;
+        transition: 0.25s linear;
+    }
+    .links {
+        padding-bottom: 0.7rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .links li {
+        width: 100%;
+    }
+    .links a {
+        color: #333;
+        padding: 0.7rem 0.4rem;
+        display: block;
+    }
+}
+@media screen and (min-width:801px){
+    .links-container {
+        height: auto !important;
+    }
+}

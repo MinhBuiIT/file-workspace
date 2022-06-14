@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="notify">
+        <div class="notify-icon">
+            <i class="fa fa-times icon-x"></i>
+        </div>
+        <span class="notify-content">Import into the format,please</span>
+    </div>
+    <form class="form-post" autocomplete="off">
+        <input type="text" required name="img" placeholder="Enter url img">
+        <input type="text" required name="title" placeholder="Enter title">
+        <input type="text" required name="author" placeholder="Enter author">
+        <input type="text" required name="rating" placeholder="Enter rating" min="1" max="5">
+        <input type="text" required name="buyAmount" placeholder="Enter number of buyer">
+        <input type="text" required name="price" placeholder="Enter price of courses" min="1">
+        <div>
+            <label for="best-seller">Best Seller?</label>
+            <input type="checkbox" name="bestSeller" id="best-seller">
+        </div>
+        <button type="submit" class="course-btn">Add Course</button>
+    </form>
+    <input type="text" class="filter" name="filter" placeholder="Search">
+    <div class="courses-list">
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

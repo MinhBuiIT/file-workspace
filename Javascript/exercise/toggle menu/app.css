@@ -1,0 +1,40 @@
+body {
+    font-family: Poppins,sans-serif;
+    line-height: 1;
+}
+header .icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menu {
+    width: 400px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    list-style: none;
+    padding: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s linear;
+}
+.is-shown {
+    transform: translateX(0);
+}
+.menu .item {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 30px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+.menu .link {
+    text-decoration: none;
+    color: #333;
+
+}

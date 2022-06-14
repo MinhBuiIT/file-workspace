@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Play Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="music-wrap">
+        <div class="music-wrap__img">
+            <div class="music-wrap__img-overlay">
+                <i class="fa fa-play"></i>
+            </div>
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="photos" class="img-music">
+        </div>
+        <h3 class="music-wrap__title">All Falls Down</h3>
+        <h3 class="music-wrap__singer">Alan Walker</h3>
+        <div class="process">
+            <input type="range" id="process-bar" class="bar" min="0" max="" value="0">
+            <audio src="./music/All Falls Down.mp3" id="song"></audio>
+        </div>
+        <div class="music-wrap__time">
+            <div class="current-music">00:00</div>
+            <div class="duration-music">00:00</div>
+        </div>
+        <div class="music-wrap__icon">
+            <i class="fa fa-backward music-wrap__icon-pre"></i>
+            <div class="music-wrap__icon-play">
+                <i class="fa fa-play icon-play-music"></i>
+            </div>
+            <i class="fa fa-forward music-wrap__icon-next"></i>
+            <i class="fa fa-repeat music-wrap__icon-repeat"></i>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

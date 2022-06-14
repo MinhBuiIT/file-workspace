@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.loading {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  margin: auto;
+}
+.loading div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.loading div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 3px solid #a2d2ff;
+  border-radius: 50%;
+  animation: inFade 1s infinite;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.loading div:nth-child(1) {
+  transform: rotate(45deg);
+  filter: hue-rotate(45deg);
+}
+
+.loading div:nth-child(1)::before {
+  content: "";
+  animation-delay: 0.125s;
+}
+
+.loading div:nth-child(2) {
+  transform: rotate(90deg);
+  filter: hue-rotate(90deg);
+}
+
+.loading div:nth-child(2)::before {
+  content: "";
+  animation-delay: 0.25s;
+}
+
+.loading div:nth-child(3) {
+  transform: rotate(135deg);
+  filter: hue-rotate(135deg);
+}
+
+.loading div:nth-child(3)::before {
+  content: "";
+  animation-delay: 0.375s;
+}
+
+.loading div:nth-child(4) {
+  transform: rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+
+.loading div:nth-child(4)::before {
+  content: "";
+  animation-delay: 0.5s;
+}
+
+.loading div:nth-child(5) {
+  transform: rotate(225deg);
+  filter: hue-rotate(225deg);
+}
+
+.loading div:nth-child(5)::before {
+  content: "";
+  animation-delay: 0.625s;
+}
+
+.loading div:nth-child(6) {
+  transform: rotate(270deg);
+  filter: hue-rotate(270deg);
+}
+
+.loading div:nth-child(6)::before {
+  content: "";
+  animation-delay: 0.75s;
+}
+
+.loading div:nth-child(7) {
+  transform: rotate(315deg);
+  filter: hue-rotate(315deg);
+}
+
+.loading div:nth-child(7)::before {
+  content: "";
+  animation-delay: 0.875s;
+}
+
+.loading div:nth-child(8) {
+  transform: rotate(360deg);
+  filter: hue-rotate(360deg);
+}
+
+.loading div:nth-child(8)::before {
+  content: "";
+  animation-delay: 1s;
+}
+
+@keyframes inFade {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

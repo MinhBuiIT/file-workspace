@@ -1,0 +1,51 @@
+html {
+    font-family: Poppins,sans-serif;
+}
+body {
+    transition: all 1s linear;  
+    /* display: flex; */
+}
+.button {
+    width: 250px;
+    padding: 20px 0;
+    font-size: 25px;
+    display: block;
+    margin: 50px auto;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 2s linear;  
+}
+.btn-color {
+    background-color: aqua;
+}
+/* number */
+.btn-wrap {
+    width: 100%;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.increase-btn,
+.decrease-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    background-color: #999;
+}
+.number {
+    margin: 0 18px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(90deg,#00DBDE,#FC00FF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

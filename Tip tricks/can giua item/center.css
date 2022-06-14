@@ -1,0 +1,29 @@
+/* Cach 1 */
+    /* text-align: center;
+    line-height: 300px; */
+/* Cach 2 display:flex; margin:auto */
+/* cach 3: display:flex;align-items:center; justify-content:center */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box {
+    background-color: aqua;
+    height: 300px;
+    display: flex;
+}
+h3 {
+    font-size: 36px;
+    margin: auto;
+    position: relative;
+}
+h3::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left:3px solid #333;
+    height: 40px;
+}

@@ -1,0 +1,80 @@
+html {
+    font-family: Poppins,sans-serif;
+}
+body {
+    line-height: 1;
+    width: 100%;
+    display: block;
+}
+.button {
+    font-size: 16px;
+    min-width: 150px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(60, 223, 168);
+    color: #fff;
+    margin: 50px auto;
+    display: block;
+    min-height: 40px;
+    border-radius: 12px;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: Fadein 0.2s linear;
+  }
+  .modal-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: zoom-out;
+  }
+  .modal-content {
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-content input {
+      border: 1px solid #333;
+      margin-top: 10px;
+      padding: 5px 10px;
+  }
+  .modal-content input:nth-child(2) {
+    margin-bottom: 15px;
+}
+  .modal-close {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 100rem;
+    color: #000;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-main {
+    overscroll-behavior-y: contain;
+  }
+@keyframes Fadein {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

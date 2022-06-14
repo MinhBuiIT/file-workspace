@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+}
+.navigation {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    background-color: #212532;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+.navigation.active {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition-delay: 0s;
+
+}
+.navigation span{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)),calc(12px * var(--y)));
+    transition: 0.5s;
+    transition-property: width,height,background,transform;
+    transition-delay: calc(var(--i) * 0.05s);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation.active span{
+    width: 45px;
+    height: 45px;
+    transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+    background: #333849;
+}
+.navigation span ion-icon {
+    font-size: 0em;
+    transition: .5s;
+}
+.navigation.active span ion-icon {
+    font-size: 1.3rem;
+    color: #fff;
+}

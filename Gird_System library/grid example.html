@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <link rel="stylesheet" href="./grid.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        /* .container {
+            background-color: palegreen;
+            height: 1000px;
+        } */
+        .team {
+            background-color: orange;
+            height: 260px;
+        }
+        h1 {
+            margin: 0;
+            color: white;
+            line-height: 260px;
+            text-align: center;
+        }
+        @media (max-width:1023px) {
+            .team {
+                margin-top: 12px;
+            }
+        }
+        .team-list {
+            background-color: wheat;
+            list-style: none;
+            margin: 0;
+            height: 260px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid wide container">
+        <div class="row">
+            <div class="col l-3 m-0 c-0">
+                <ul class="team-list">
+                    <li class="team-item">javascript</li>
+                    <li class="team-item">html css</li>
+                    <li class="team-item">NodeJs</li>
+                </ul>
+            </div>
+            <div class="col l-9 m-12 c-12">
+                <div class="row">
+                    <div class="col l-4 m-4 c-12 ">
+                        <div class="team">
+                            <h1>Team 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="team">
+                            <h1>Team 1</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="team">
+                            <h1>Team 1</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

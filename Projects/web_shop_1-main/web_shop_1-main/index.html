@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+
+<!-- 
+
+  GÓC ỦNG HỘ TÁC GIẢ 
+  - Cảm ơn bạn đã down source ! 
+  - Để tiếp thêm động lực cho mình , bạn có thể donate (10k,20k cũng không vấn đề gì ) mình qua : 
+  + MOMO : 033 424 4249 ( DƯƠNG HOÀNG QUÂN )
+  + ATM : 0701 1046 0250 ( Sacombank) - Duong Quoc Thu 
+  
+  - Nếu  bạn có chia sẽ source này , vui lòng không xóa cmt này 
+  - Cảm ơn bạn ,chúc bạn học tập vui vẻ 
+ -->
+
+<body>
+
+    <div id="web">
+        <header>
+
+            <div class="top-header">
+                <div class="logo">
+                    <ion-icon name="fast-food-outline"></ion-icon>
+                </div>
+                <ul id="menu">
+                    <li class="item">Trang Chủ</li>
+                    <li class="item">Thức Ăn</li>
+                    <li class="item">Khuyến Mãi</li>
+                    <li class="item">Dịch Vụ</li>
+
+                </ul>
+                <div class="actions">
+                    <div class="cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <small>5</small>
+                    </div>
+                    <div class="contact">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="more">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="intro">
+                    <h1>Tiệm Bánh Hoàng Gia</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia iste dolore dolorem nihil
+                        perspiciatis! Magni voluptatibus consectetur minima iste? Quae excepturi rerum doloremque rem,
+                        architecto commodi fuga suscipit vero vitae!</p>
+                    <div class="actions">
+                        <button class="item" id="explore">Khám Phá</button>
+                        <button class="item" id="book"> Đặt Ngay</button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <content>
+            <div class="container">
+                <h1 class="title">Loại Bánh Bán Chạy</h1>
+                <ul id="list-common">
+                    <li class="item">
+                        <div class="circle">
+                            <img src="images/img1.jpg" alt="">
+
+                        </div>
+                        <div class="name">Bánh Kem</div>
+                        <p class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti corporis
+                        </p>
+                        <button class="book">Đặt Mua</button>
+                    </li>
+                    <li class="item">
+                        <div class="circle">
+                            <img src="images/img2.jpg" alt="">
+
+                        </div>
+                        <div class="name">Bánh Kem</div>
+                        <p class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti corporis
+                        </p>
+                        <button class="book">Đặt Mua</button>
+                    </li>
+                    <li class="item">
+                        <div class="circle">
+                            <img src="images/img2.jpg" alt="">
+                        </div>
+                        <div class="name">Bánh Kem</div>
+                        <p class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti corporis
+                        </p>
+                        <button class="book">Đặt Mua</button>
+                    </li>
+                </ul>
+                <h1 class="title">Sản Phẩm Của Chúng Tôi</h1>
+
+            </div>
+            <div class="container">
+                <ul id="list-products">
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                    <li class="product">
+                        <div class="thumb">
+                            <img src="images/img1.jpg" alt="">
+                        </div>
+                        <div class="size">
+                            <div class="item" id="small">S</div>
+                            <div class="item" id="big">L</div>
+                        </div>
+                        <div class="price"> Giá : 250.000 VNĐ</div>
+                        <input type="number" placeholder="Số lượng" class="amount" min="1" max="10">
+                        <div class="book">Đặt</div>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                </div>
+            </div>
+        </content>
+        <footer>
+            <div class="container">
+                <div class="footer-box" id="about">
+                    <h2>VỀ CHÚNG TÔI</h2>
+                    <ul>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolore id, itaque
+                                provident laudantium ab repellendus accusamus. Deserunt, cum modi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis veritatis eaque
+                                voluptatibus voluptate excepturi at facere impedit a debitis aperiam?</p>
+                        </li>
+                        <li>
+                            <button class="contact">Liên Hệ Ngay</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h2>THÔNG TIN LIÊN HỆ</h2>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+
+                            Rạch Giá - Kiên Giang
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            0334244249
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                            quocthusuki29@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-box">
+                    <h2>ĐĂNG KÝ</h2>
+                    <ul>
+                        <li>
+                            <form action="">
+                                <input type="text" placeholder="Nhập Email" id="email">
+                                <button> Nhận Thông Báo</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

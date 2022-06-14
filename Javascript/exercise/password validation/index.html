@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-wrapper">
+        <div class="password-wrapper">
+            <input type="password" class="input-password" placeholder="Enter your password">
+            <i class="fa fa-eye eye-password"></i>
+        </div>
+        <div class="validation-password">
+            <div class="validation-item check-quality">
+                <i class="fa fa-circle"></i>
+                <span>Contains at least 8 characters</span>
+            </div>
+            <div class="validation-item check-upp">
+                <i class="fa fa-circle"></i>
+                <span>Contains at least 1 uppercase</span>
+            </div>
+            <div class="validation-item check-num">
+                <i class="fa fa-circle"></i>
+                <span>Contains at least 1 number</span>
+            </div>
+            <div class="validation-item check-special">
+                <i class="fa fa-circle"></i>
+                <span>Contains at least 1 special character</span>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

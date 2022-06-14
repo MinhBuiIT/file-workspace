@@ -1,0 +1,30 @@
+html {
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.tab {
+    max-width: 500px;
+    margin: 50px auto;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+}
+.list::-webkit-scrollbar {
+    display: none;
+}
+.item{
+    padding: 0 20px;
+    cursor: pointer;
+}
+.active {
+    border-bottom: 1px solid blue;
+}

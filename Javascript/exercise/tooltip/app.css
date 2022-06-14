@@ -1,0 +1,42 @@
+html {
+    display: block;
+    font-family: Poppins,sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.tooltip {
+    position: relative;
+}
+.tooltip-text {
+    position: fixed; /*phải để thành fixed vì khi tạo thẻ div thì ngang cấp với .text*/
+    /* left: 50%; */
+    /* transform: translate(-50%,-110%); */
+    background-color: #00b4d8;
+    padding: 6px 10px;
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+.tooltip-text::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%,100%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #00b4d8;
+}
+.title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #00b4d8;
+    text-transform: uppercase;
+    display: block;
+    width: max-content;
+    text-align: center;
+    margin: 150px auto;
+}

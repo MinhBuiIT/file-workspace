@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.item {
+    margin-top: 8px;
+    min-height: 150px;
+    line-height: 150px;
+    background-color: aqua;
+    font-size: 30px;
+    color: yellowgreen;
+    text-align: center;
+}
+.itempro {
+    background-color: violet;
+    color: whitesmoke;
+    font-size: 20px;
+    min-height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.main {
+    display: flex;
+    padding: 0 32px;
+}
+.navbar {
+    width: 300px;
+    min-height: 100%;
+    margin-top: 8px;
+    background-color: cornflowerblue;
+}
+.content {
+    flex: 1;
+}
+@media (min-width:740px) and (max-width:1023px) {
+    .hidden-on-Tablet {
+        display: none;
+    }
+}
+@media (max-width:739px){
+    .hidden-on-Mobile {
+        display: none;
+    }
+}

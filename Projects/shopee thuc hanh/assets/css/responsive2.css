@@ -1,0 +1,140 @@
+/* Tablet & phone */
+@media (max-width:1023px) {
+    :root {
+        --header-height: 80px;
+        --header-mr:6px;
+    }
+    
+    .hidden-on-mb-tl {
+        display: none;
+    }
+    .mt-on-mb-tl {
+        margin-top: calc(var(--header-height) + var(--header-sort));
+    }
+    .header {
+       position: fixed;
+       top: 0px;
+       left: 0;
+       right: 0;
+       z-index: 10;
+    }
+    .header-search {
+        padding: 0;
+    }
+    .header-sort-list {
+        display: flex;
+    }
+    .list-product {
+        display: flex;
+    }
+    .header-search__cart-product {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        z-index: 2;
+        padding: 0 calc((100% - 644px)/2);
+    }
+    .header-search__cart-product::before {
+        display: none;
+    }
+
+}
+/* tablet */
+@media screen and (max-width:1023px) and (min-width:740px) {
+    
+    .hidden-on-tl {
+        display: none;
+    }
+    .no-mt {
+        margin-top: 0;
+    }
+    .header-search {
+        height: var(--header-height);
+    }
+    .header-search__place-text {
+        padding: 4px 7px;
+    }
+    .header-search__place {
+        width: 25%;
+    }
+    .header-search__cart {
+        width: 70px;
+        padding-left: 40px;
+    }
+    .header-search__cart-wrap::before {
+        right: -14px;
+    }
+   
+    
+}
+/* mobile */
+@media screen and (max-width:739px) {
+    :root {
+        --header-height:60px;
+        --header-mr:6px;
+    }
+    .add-margin {
+        margin: 0 4px;
+    }
+    .header-search {
+        height: var(--header-height);
+        justify-content: space-between;
+    }
+    .header-search__img {
+        padding-bottom: 0;
+    }
+    .header-search-logo-shopee {
+        width: 120px;
+    }
+    .header-search__box {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: var(--header-sort);
+        animation: topdown 0.15s ease;
+        display: none;
+    }
+    .header-search__place-text {
+        padding: 4px;
+    }
+    .header-search__btn {
+        margin-right: 18px;
+    }
+    
+    .header-search__history {
+        width: 100vw;
+        top:calc(100% + 1px);
+    }
+    .header-search__cart {
+        width: unset;
+        padding-right: 36px;
+        padding-left: 0;
+    }
+    .header-search__cart-wrap {
+        width: unset;
+    }
+    .header-search__cart-wrap::before {
+        right: 26px;
+    }
+    .search-icon {
+        display: flex;
+        width: 32px;
+        margin-left: -12px;
+    }
+    .pagination-item {
+        margin: 0 12px;
+    }
+    .footer-wrap {
+        text-align: center;
+    }
+    .footer-download {
+        justify-content: center;
+    }
+    .wrap-icon {
+        display: flex;
+    }
+
+}

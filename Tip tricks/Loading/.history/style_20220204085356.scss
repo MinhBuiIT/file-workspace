@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-color: #000;
+}
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
+.loading {
+    @include size(5rem);
+    background-color: #fff;
+    position: relative;
+}

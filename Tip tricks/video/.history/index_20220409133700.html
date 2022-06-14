@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Video</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="btn">
+            <div class="play"></div>
+        </div>
+        <p class="text">Play Video</p>
+    </div>
+    <div class="video">
+        <video src="./Vietnam - From Above.mp4" controls></video>
+        <p class="close">Close</p>
+    </div>
+    <script>
+        let btn = document.querySelector('.btn');
+        let video = document.querySelector('.video');
+        let close = document.querySelector('.close');
+        let videoshow = document.querySelector('video');
+        btn.onclick = function() {
+            btn.classList.add('active');
+            video.classList.add('active');
+            videoshow.play();
+        }
+        close.onclick = function() {
+            btn.classList.remove('active');
+            video.classList.remove('active');
+        }
+    </script>
+</body>
+</html>

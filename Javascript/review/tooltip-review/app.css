@@ -1,0 +1,32 @@
+html {
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.text {
+    width: fit-content;
+    margin: 100px auto;
+    display: block;
+    font-size: 20px;
+    color: #3C38A6;
+}
+.tooltip-text {
+    position: fixed;
+    padding: 10px 16px;
+    background-color: #3C38A6;
+    color: #fff;
+    text-align: center;
+    border-radius: 12px;
+}
+.tooltip-text::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,95%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #3C38A6;
+}

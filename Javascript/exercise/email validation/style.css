@@ -1,0 +1,49 @@
+.input-wrapper {
+    width: 500px;
+    margin: 50px auto;
+    position: relative;
+}
+.input-email {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 15px 25px;
+    padding-right: 52px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.input-email.invalid + .icons-test .fa-times,
+.input-email.valid + .icons-test .fa-check {
+    opacity: 1;
+    visibility:visible;
+}
+.icons-test {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    display: flex;
+}
+.icons-test i{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: inherit;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+}
+.icons-test .fa-check {
+    background-color: #00f5d4;
+}
+.icons-test .fa-times {
+    background-color: #f15bb5;
+}

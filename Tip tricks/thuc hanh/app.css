@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: Poppins,sans-serif;
+}
+.main {
+    margin: auto;
+    background-color: rgb(231, 232, 235);
+    width: 800px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    
+}
+.main::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    clip-path: circle(64% at 100% 19px);
+    background-color: #f72585;
+    z-index: 1;
+}
+.main::after {
+    content: "";
+    position: absolute;
+    bottom: -72px;
+    left: 1px;
+    width: 300px;
+    height: 262px;
+    clip-path: circle(67% at 7px 0px);
+    background-color: #3f37c9;
+}
+.login {
+    margin: auto;
+    width: 640px;
+    min-height: 420px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 2;
+}
+.login-place {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 55px;
+}
+.login-title {
+    font-size: 24px;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 52px;
+}
+.wrap-input {
+    width: 100%;
+    position: relative;
+    margin-bottom: 28px;
+}
+.email-input {
+    width: 100%;
+    padding:14px 16px;
+    outline: none;
+    border: 1px solid #5c677d;
+    border-radius: 4px;
+    transition: .2s linear;
+}
+.label-input {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    transition: .2s linear;
+    transition-property: top;
+}
+.email-input:focus {
+    border: 1px solid #6d23b6;
+}
+.email-input:not(:placeholder-shown) ~ .label-input,
+.email-input:focus ~ .label-input {
+    top:0;
+    left: 12px;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #6d23b6;
+}
+.forgot-account {
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #777;
+    letter-spacing: 1.5px;
+    transition: 0.2s linear;
+}
+.forgot-account:hover {
+    color: #6d23b6;
+}
+.login-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.login-btn {
+    width: 100%;
+    padding: 15px 55px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.login-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-left {
+   background-color: #ccc;
+   color: #fff;
+   border-bottom-left-radius: 8px;
+}
+.btn-right {
+    background-color: #6d23b6;
+    color: #333;
+    text-align: right;
+   border-bottom-right-radius: 8px;
+
+}

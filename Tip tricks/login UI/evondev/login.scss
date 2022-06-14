@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap");
+$gray:#e7e8eb;
+$gray-dark:#2e3c54;
+$red:#fb676c;
+$yellow:#feba00;
+$green:#04beae;
+$purple:#ca68d1;
+$white:#ffffff;
+$color-text:#767676;
+$color-register:#e8e9ec;
+$color-signin:#2d3b55;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family:Montserrat,sans-serif ;
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+}
+.sign-up {
+    max-width: 800px;
+    height: 600px;
+    width: 100%;
+    background-color: $gray;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.form {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 70%;
+    background-color: $white;
+    flex-flow: column nowrap;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 53px 0px 0;
+    z-index: 10;
+    &__warp {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    &__title {
+        font-size: 2.5rem;
+        color: $gray-dark;
+        font-weight: 500;
+        margin-bottom: 60px;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-left: 2px;
+    }
+    &__sign-up {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 0px 2px 18px;
+        text-transform: uppercase;
+        border-color: transparent transparent #f4f4f4;
+        margin-bottom: 35px;
+        outline: none;
+        letter-spacing: .2rem;
+    }
+    &__forget {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        color: $gray-dark;
+        letter-spacing: .1rem;
+        line-height: 2rem;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        overflow: hidden;
+    }
+    &__btn {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+    .btn-gray {
+        background-color: $color-register;
+        color: #959cab;
+    }
+    .btn-green {
+        background-color: $color-signin;
+        color: $white;
+        text-align: right;
+    }
+}
+.circle {
+    position: relative;
+    width: 100%;
+    &__red {
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        background-color: $red;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 2;
+    }
+    &__yellow {
+        position: absolute;
+        top: 15px;
+        left: 230px;
+        background-color: $yellow;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 1;
+    }
+    &__green {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $green;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 2;
+    }
+    &__purple {
+        position: absolute;
+        bottom: -67px;
+        right: -65px;
+        background-color: $purple;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        display: inline-block;
+        z-index: 1;
+    }
+}

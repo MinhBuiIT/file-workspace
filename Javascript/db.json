@@ -1,0 +1,38 @@
+{
+  "posts": [],
+  "courses": [
+    {
+      "img": "https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGphdmFzY3JpcHR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "title": "Working with React and Go (Golang)",
+      "author": "Trevor Sawler",
+      "rating": "4.7",
+      "buyAmount": "1000",
+      "price": "99",
+      "bestSeller": true,
+      "id": 3
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1654465371832-f0d119559f68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "title": "HTML & CSS For Begginer",
+      "author": "evondev",
+      "rating": "4.7",
+      "buyAmount": "123",
+      "price": "23",
+      "bestSeller": false,
+      "id": 4
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1654524519389-0393e25b2dac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+      "title": "Vue",
+      "author": "abc",
+      "rating": "5",
+      "buyAmount": "1234",
+      "price": "445",
+      "bestSeller": false,
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

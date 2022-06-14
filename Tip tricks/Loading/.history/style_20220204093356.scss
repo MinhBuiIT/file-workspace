@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    background-color: #000;
+}
+html {
+    font-size: 62.5%;
+}
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
+.loading {
+    @include size(7rem);
+    position: relative;
+    margin: 5rem auto;
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border: 4px solid #a2d2ff;
+            border-radius: 50%;
+            animation: inFade 2s linear infinite;
+        }
+    }
+}
+@for $i from 1 through 8 {
+    .loading div:nth-child(#{$i}) {
+        transform: rotate(calc($i * 45deg));
+        filter: hue-rotate(calc($i * 45deg));
+        
+    }
+    .loading div:nth-child(#{$i})::before {
+        content: "";
+        animation-delay: calc($i * 0.25s);
+    }
+}
+@keyframes inFade {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

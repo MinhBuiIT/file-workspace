@@ -1,0 +1,27 @@
+html {
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    font-size: 16px;
+    line-height: 1;
+}
+.search {
+    width: 500px;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin: 50px auto;
+}
+.search .input-search {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+.dropdown-item {
+    margin: 16px 0;
+    display: block;
+}
+.primary {
+    color: #3a86ff;
+}

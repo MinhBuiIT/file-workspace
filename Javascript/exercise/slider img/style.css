@@ -1,0 +1,84 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.slider {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.icon-next,
+.icon-pre {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.icon-pre {
+    left: -20px;
+}
+
+.icon-next {
+    right: -20px;
+}
+
+.slider-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.slider-main {
+    display: flex;
+    align-items: center;
+    transition: all 0.25s linear;
+    border-radius: 12px;
+}
+
+.slider-item {
+    flex: 1 0 100%;
+}
+
+.slider-item__img {
+    width: unset;
+    height: 600px;
+    border-radius: 12px;
+    user-select: none;
+}
+
+.dot-list {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    color: #888;
+    z-index: 1;
+}
+
+.dot-list .dot-item {
+    cursor: pointer;
+}
+
+.dot-list .dot-item.active {
+    color: #fff;
+}

@@ -1,0 +1,109 @@
+html {
+    font-family:Poppins,sans-serif;
+}
+.modal {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#999;
+    display:flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 2s linear;
+}
+.is-shown {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-wrap {
+    margin:auto;
+    width:600px;
+    height:300px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 50px 30px;
+}
+.icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size:20px;
+    width:25px;
+    height:25px;
+    background-color: #777;
+    border-radius:10px;
+    color: #fff;
+    cursor: pointer;
+}
+.modal-des {
+    font-size:16px; 
+    text-align: center;
+    font-weight: 500;
+}
+.modal-btn {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+}
+.btn {
+    width:70%;
+    margin: 16px auto;
+    padding:12px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-confirm {
+    background-color: rgba(0, 0, 255, 0.548);
+    color:white;
+}
+/* noti */
+.noti {
+    position: fixed;
+    bottom: 14px;
+    left: 10px;
+    background-color: #fff;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transform: translateY(150%);
+    animation: updown 4s linear infinite forwards;
+}
+.noti-img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.noti-content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin-left: 8px;
+    justify-content: flex-start;
+}
+.noti-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 8px;
+    line-height: 24px;
+}
+.noti-text {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 6px;
+}
+@keyframes updown {
+    20%,
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}

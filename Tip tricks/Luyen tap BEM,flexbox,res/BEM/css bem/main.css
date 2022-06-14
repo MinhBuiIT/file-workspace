@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+ }
+
+ #toast{
+     position: fixed;
+     top: 32px;
+     right: 32px;
+
+ }
+.toast{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 24px;
+    border-left: 4px solid;
+    border-radius: 3px;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    min-width: 400px;
+    animation: outRight ease .4s, inFade linear 1s 2s forwards; 
+    /* 1s thoi gian bien mat
+    2s thoi gian delay
+    forwards bien mat luon
+     */
+    
+}
+
+@keyframes outRight {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px))
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes inFade {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast__icon{
+
+}
+
+.warn__body,
+.infor__body,
+.toast__body{
+    margin: 0 10px;
+    
+
+}
+
+.toast__title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg{
+    font-weight: 500;
+    color: #888;
+    margin-top: 5px;
+    line-height: 1.4
+}
+
+.toast__close:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toast + .toast {
+    margin-top: 40px;
+}
+
+.toast--success{
+    border-color :#47d864;
+}
+
+.toast--success .toast__icon{
+    color:#47d864;
+
+}
+
+
+.toast--infor{
+    border-color:#2f86eb;
+}
+
+.toast--infor .toast__icon{
+    color:#2f86eb;
+
+}
+
+.toast--warn{
+    border-color :#ffc021;
+}
+
+.toast--warn .toast__icon{
+    color:#ffc021;
+
+}
+

@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+@mixin size($size) {
+    width: $size;
+    height: $size;
+}
+.loading {
+    @include size(5px);
+    background-color: #fff;
+
+}

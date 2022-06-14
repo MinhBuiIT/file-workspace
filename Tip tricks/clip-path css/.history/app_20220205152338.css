@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 15px;
+    margin-right: 15px;
+}
+.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    position: relative;
+    z-index: 2;
+}
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #7777e9;
+    clip-path: inset(0 100% 0 0);
+}
+.item:hover{
+    content: "";
+    color: #fff;
+    cursor: pointer;
+}
+.item:hover .item::before {
+    content: "";
+    clip-path: inset(0 100% 0 0);
+}
+
+@keyframes wipe-in-right {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  }

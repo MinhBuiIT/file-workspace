@@ -1,0 +1,48 @@
+html {
+    font-family: "Poppins",sans-serif;
+}
+.notification {
+    width: 400px;
+    height: 150px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    transform: translateY(150%);
+    animation: noti 4s linear 1;
+}
+.noti-img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+.noti-des {
+    max-width: 60%;
+    padding-right: 12px;
+}
+.noti-des h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+.noti-des p {
+    font-size: 16px;
+    text-align: center;
+}
+@keyframes noti {
+    20%,
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}
